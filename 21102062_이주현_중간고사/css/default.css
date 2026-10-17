@@ -1,0 +1,249 @@
+/* 모바일용 CSS */
+/* 기본 CSS */
+body {
+    background: #eeeeee;
+    color: #333333;
+}
+
+#wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#wrap section {
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background: #273443;
+}
+
+.logo {
+    padding: 25px 0;
+    text-align: center;
+    font-size: 26px;
+}
+
+.logo a {
+    color: #ffffff;
+}
+
+.nav {
+    width: 100%;
+}
+
+.gnb {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gnb li {
+    width: 50%;
+    text-align: center;
+    background: #394c60;
+}
+
+.gnb li a {
+    display: block;
+    padding: 15px 0;
+    color: #ffffff;
+}
+
+.slider_section {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    padding: 35px 5%;
+    background: #d8e1eb;
+}
+
+.main_text {
+    text-align: center;
+}
+
+.main_text h2 {
+    font-size: 27px;
+    margin-bottom: 15px;
+}
+
+.main_text p {
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.main_image {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.main_image img {
+    width: 75%;
+}
+
+.intro_section {
+    width: 100%;
+    padding: 35px 5% 20px;
+    text-align: center;
+}
+
+.intro_section h2 {
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.category_section {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    padding: 10px 5% 30px;
+}
+
+.gear_box {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+}
+
+.gear_box img {
+    width: 75%;
+}
+
+.gear_box h3 {
+    font-size: 19px;
+    margin: 15px 0;
+}
+
+.gear_box p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.review_section {
+    width: 100%;
+    padding: 35px 5%;
+    background: #d8e1eb;
+}
+
+.review_section h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.review_list {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.review_list div {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: #ffffff;
+}
+
+.review_list h3 {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.review_list p {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.about_section {
+    width: 100%;
+    padding: 45px 5%;
+    text-align: center;
+}
+
+.about_section h2 {
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.footer {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background: #273443;
+    color: #ffffff;
+    font-size: 13px;
+}
+
+/* 태블릿용 CSS */
+@media all and (min-width:768px) {
+    .header {
+        flex-flow: row wrap;
+    }
+    .logo {
+        width: 30%;
+    }
+    .nav {
+        width: 70%;
+    }
+    .gnb li {
+        width: 25%;
+    }
+    .gnb li a {
+        padding: 30px 0;
+    }
+    .slider_section {
+        flex-flow: row wrap;
+    }
+    .main_text {
+        width: 50%;
+        padding-top: 55px;
+    }
+    .main_image {
+        width: 50%;
+        margin-top: 0;
+    }
+    .gear_box {
+        width: 50%;
+    }
+    .review_list {
+        flex-flow: row wrap;
+    }
+    .review_list div {
+        width: 33.333333%;
+    }
+}
+
+/* PC용 CSS */
+@media all and (min-width:960px) {
+    #wrap {
+        width: 90%;
+        max-width: 1200px;
+    }
+    .logo {
+        width: 25%;
+    }
+    .nav {
+        width: 75%;
+    }
+    .slider_section {
+        padding: 55px 5%;
+    }
+    .main_text {
+        padding-top: 75px;
+    }
+    .main_text h2 {
+        font-size: 35px;
+    }
+    .gear_box {
+        width: 25%;
+    }
+}
