@@ -235,28 +235,168 @@ body {
     }
 }
 
-/* PC용 CSS */
+/* PC용 CSS: 포토샵 시안 1440 x 3721 기준 */
 @media all and (min-width:960px) {
     #wrap {
-        width: 90%;
+        width: 83.333333%;
         max-width: 1200px;
+        container-type: inline-size;
+    }
+    .header {
+        flex-flow: row nowrap;
+        height: 8.333333cqw;
     }
     .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 25%;
+        padding: 0;
+        font-size: 2.5cqw;
     }
-    .nav {
-        width: 75%;
+    .nav { width: 75%; }
+    .gnb, .gnb li { height: 100%; }
+    .gnb li { width: 25%; }
+    .gnb li a {
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        font-size: 1.916667cqw;
     }
     .slider_section {
-        padding: 55px 5%;
+        position: relative;
+        display: block;
+        height: 68.333333cqw;
+        padding: 0;
     }
     .main_text {
-        padding-top: 75px;
+        position: absolute;
+        left: 4.166667cqw;
+        top: 21.5cqw;
+        width: 50cqw;
+        padding: 0;
     }
     .main_text h2 {
-        font-size: 35px;
+        font-size: 3.666667cqw;
+        line-height: 1.65;
+        margin-bottom: 1cqw;
+    }
+    .main_text p {
+        font-size: 1.833333cqw;
+        line-height: 1.65;
+    }
+    .main_image {
+        position: absolute;
+        left: 54.5cqw;
+        top: 15.416667cqw;
+        width: 40cqw;
+        height: 28.333333cqw;
+        margin: 0;
+        background: #ffffff;
+    }
+    .main_image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    .intro_section {
+        height: 33.333333cqw;
+        padding: 15cqw 0 0;
+    }
+    .intro_section h2 {
+        font-size: 3.333333cqw;
+        line-height: 1.65;
+        margin-bottom: .833333cqw;
+    }
+    .intro_section p {
+        font-size: 2cqw;
+        line-height: 1.65;
+    }
+    .category_section {
+        height: 65cqw;
+        padding: 0 5cqw 15.833333cqw;
     }
     .gear_box {
+        position: relative;
         width: 25%;
+        height: 49.166667cqw;
+        padding: 0;
+        margin: 0;
     }
+    .gear_box img {
+        position: absolute;
+        left: 2.083333cqw;
+        top: 5.833333cqw;
+        width: 18.333333cqw;
+        height: 19.166667cqw;
+        object-fit: contain;
+    }
+    .gear_box h3 {
+        position: absolute;
+        top: 29.5cqw;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        font-size: 2.25cqw;
+        line-height: 1.65;
+    }
+    .gear_box p {
+        position: absolute;
+        top: 35.333333cqw;
+        left: 0;
+        width: 100%;
+        padding: 0 .833333cqw;
+        font-size: 1.75cqw;
+        line-height: 1.65;
+    }
+    .review_section {
+        height: 56.666667cqw;
+        padding: 9.166667cqw 5cqw 0;
+    }
+    .review_section h2 {
+        font-size: 3.333333cqw;
+        line-height: 1.65;
+        margin-bottom: 5.333333cqw;
+    }
+    .review_list { flex-flow: row nowrap; }
+    .review_list div {
+        width: 33.333333%;
+        height: 24.166667cqw;
+        padding: 4.333333cqw 2.5cqw 0;
+        margin: 0;
+    }
+    .review_list h3 {
+        font-size: 2.416667cqw;
+        line-height: 1.65;
+        margin-bottom: 1.833333cqw;
+    }
+    .review_list p {
+        font-size: 1.833333cqw;
+        line-height: 1.65;
+    }
+    .about_section {
+        height: 60cqw;
+        padding: 20.833333cqw 0 0;
+    }
+    .about_section h2 {
+        font-size: 3.5cqw;
+        line-height: 1.65;
+        margin-bottom: 1.916667cqw;
+    }
+    .about_section p {
+        font-size: 2.166667cqw;
+        line-height: 1.65;
+    }
+    .footer {
+        height: 18.416667cqw;
+        padding: 7.5cqw 0 0;
+        font-size: 1.916667cqw;
+        line-height: 1.65;
+    }
+    .pc_break { display: initial; }
+}
+@media all and (max-width:959px) {
+    .pc_break { display: none; }
 }
