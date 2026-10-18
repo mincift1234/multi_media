@@ -1,6 +1,19 @@
+/* 웹폰트 */
+@font-face {
+    font-family: "Noto Sans KR";
+    src: url("../webfonts/NotoSansKR-Bold.eot");
+    src: url("../webfonts/NotoSansKR-Bold.eot?#iefix") format("embedded-opentype"),
+         url("../webfonts/NotoSansKR-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* 모바일용 CSS */
 /* 기본 CSS */
 body {
+    font-family: "Noto Sans KR", "Malgun Gothic", sans-serif;
+    font-weight: 700;
     background: #eeeeee;
     color: #333333;
 }
