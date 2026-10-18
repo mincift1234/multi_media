@@ -241,65 +241,57 @@ body {
     }
 }
 
-/* PC용 CSS: 포토샵 시안 1440 x 3721 기준 */
+/* PC용 CSS */
 @media all and (min-width:960px) {
+    /* 기본 영역 */
     #wrap {
-        width: 83.333333%;
+        width: 83.33%;
         max-width: 1200px;
-        container-type: inline-size;
     }
+
+    /* 헤더 영역 */
     .header {
         flex-flow: row nowrap;
-        height: 8.333333cqw;
+        height: 100px;
     }
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         width: 25%;
         padding: 0;
-        font-size: 2.5cqw;
+        font-size: 30px;
+        line-height: 100px;
     }
-    .nav { width: 75%; }
-    .gnb, .gnb li { height: 100%; }
-    .gnb li { width: 25%; }
+    .nav {
+        width: 75%;
+    }
     .gnb li a {
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
         padding: 0;
-        font-size: 1.916667cqw;
+        font-size: 23px;
+        line-height: 100px;
     }
+
+    /* 슬라이더 영역 */
     .slider {
-        position: relative;
-        display: block;
-        height: 68.333333cqw;
-        padding: 0;
+        flex-flow: row nowrap;
+        min-height: 820px;
+        padding: 185px 4%;
     }
     .slider-text {
-        position: absolute;
-        left: 4.166667cqw;
-        top: 21.5cqw;
-        width: 50cqw;
-        padding: 0;
+        width: 55%;
+        padding-top: 73px;
     }
     .slider-text .sec-tit {
-        font-size: 3.666667cqw;
+        font-size: 44px;
         line-height: 1.65;
-        margin-bottom: 1cqw;
+        margin-bottom: 12px;
     }
     .slider-text p {
-        font-size: 1.833333cqw;
+        font-size: 22px;
         line-height: 1.65;
     }
     .slider-image {
-        position: absolute;
-        left: 54.5cqw;
-        top: 15.416667cqw;
-        width: 40cqw;
-        height: 28.333333cqw;
-        margin: 0;
+        width: 44%;
+        height: 340px;
+        margin: 0 0 0 1%;
         background: #ffffff;
     }
     .slider-image img {
@@ -307,103 +299,108 @@ body {
         height: 100%;
         object-fit: contain;
     }
+
+    /* 카테고리 제목 영역 */
     .display-section {
-        height: 33.333333cqw;
-        padding: 15cqw 0 0;
+        min-height: 400px;
+        padding: 180px 0 0;
     }
     .display-section .sec-tit {
-        font-size: 3.333333cqw;
+        font-size: 40px;
         line-height: 1.65;
-        margin-bottom: .833333cqw;
+        margin-bottom: 10px;
     }
     .display-section .desc {
-        font-size: 2cqw;
+        font-size: 24px;
         line-height: 1.65;
     }
+
+    /* 장비 소개 영역 */
     .promotion-section {
-        height: 65cqw;
-        padding: 0 5cqw 15.833333cqw;
+        padding: 0 5% 190px;
     }
     .promo-list li {
-        position: relative;
         width: 25%;
-        height: 49.166667cqw;
-        padding: 0;
+        min-height: 590px;
+        padding: 69px 10px 30px;
         margin: 0;
     }
     .promo-list li img {
-        position: absolute;
-        left: 2.083333cqw;
-        top: 5.833333cqw;
-        width: 18.333333cqw;
-        height: 19.166667cqw;
+        display: block;
+        width: 100%;
+        max-width: 220px;
+        height: 230px;
+        margin: 0 auto;
         object-fit: contain;
     }
     .promo-list li h3 {
-        position: absolute;
-        top: 29.5cqw;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        font-size: 2.25cqw;
+        margin: 54px 0 25px;
+        font-size: 27px;
         line-height: 1.65;
     }
     .promo-list li p {
-        position: absolute;
-        top: 35.333333cqw;
-        left: 0;
-        width: 100%;
-        padding: 0 .833333cqw;
-        font-size: 1.75cqw;
+        font-size: 21px;
         line-height: 1.65;
     }
+
+    .promo-list li p, .blog-list p {
+        word-break: keep-all;
+    }
+
+    /* 장비 선택 기준 영역 */
     .blog-section {
-        height: 56.666667cqw;
-        padding: 9.166667cqw 5cqw 0;
+        min-height: 680px;
+        padding: 110px 5% 100px;
     }
     .blog-section .sec-tit {
-        font-size: 3.333333cqw;
+        font-size: 40px;
         line-height: 1.65;
-        margin-bottom: 5.333333cqw;
+        margin-bottom: 64px;
     }
-    .blog-list { flex-flow: row nowrap; }
     .blog-list li {
         width: 33.333333%;
-        height: 24.166667cqw;
-        padding: 4.333333cqw 2.5cqw 0;
+        min-height: 290px;
+        padding: 52px 30px 30px;
         margin: 0;
     }
     .blog-list h3 {
-        font-size: 2.416667cqw;
+        font-size: 29px;
         line-height: 1.65;
-        margin-bottom: 1.833333cqw;
+        margin-bottom: 22px;
     }
     .blog-list p {
-        font-size: 1.833333cqw;
+        font-size: 22px;
         line-height: 1.65;
     }
+
+    /* 사이트 소개 영역 */
     .about-section {
-        height: 60cqw;
-        padding: 20.833333cqw 0 0;
+        min-height: 720px;
+        padding: 250px 0 100px;
     }
     .about-section .sec-tit {
-        font-size: 3.5cqw;
+        font-size: 42px;
         line-height: 1.65;
-        margin-bottom: 1.916667cqw;
+        margin-bottom: 23px;
     }
     .about-section .desc {
-        font-size: 2.166667cqw;
+        font-size: 26px;
         line-height: 1.65;
     }
+
+    /* 푸터 영역 */
     .footer {
-        height: 18.416667cqw;
-        padding: 7.5cqw 0 0;
-        font-size: 1.916667cqw;
+        min-height: 221px;
+        padding: 90px 0 40px;
+        font-size: 23px;
         line-height: 1.65;
     }
-    .pc-break { display: initial; }
+    .pc-break {
+        display: initial;
+    }
 }
 @media all and (max-width:959px) {
-    .pc-break { display: none; }
+    .pc-break {
+        display: none;
+    }
 }
-
